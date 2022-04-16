@@ -48,7 +48,7 @@ public class TestBase {
 			
 			
 		}*/
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sinha\\Desktop\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", (System.getProperty("user.dir")+"//chromedriver.exe"));
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
